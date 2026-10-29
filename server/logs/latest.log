@@ -1,0 +1,32 @@
+[00:36:59] [ServerMain/INFO]: [bootstrap] Running Java 25 (OpenJDK 64-Bit Server VM 25.0.4.1+1-LTS; Microsoft Microsoft-14951822) on Linux 6.8.0-1064-azure (amd64)
+[00:36:59] [ServerMain/INFO]: [bootstrap] Loading Purpur 1.21.11-2568-HEAD@f57bd86 (2026-04-04T22:25:54Z) for Minecraft 1.21.11
+[00:37:00] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[00:37:01] [ServerMain/ERROR]: [DirectoryProviderSource] Error loading plugin: java.lang.IllegalArgumentException: Directory 'plugins/.paper-remapped/SkinsRestorer.jar' does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+java.lang.RuntimeException: java.lang.IllegalArgumentException: Directory 'plugins/.paper-remapped/SkinsRestorer.jar' does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.registerProviders(FileProviderSource.java:85) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:63) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.registerProviders(DirectoryProviderSource.java:17) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:15) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at net.minecraft.server.Main.main(Main.java:115) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at org.bukkit.craftbukkit.Main.main(Main.java:212) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
+Caused by: java.lang.IllegalArgumentException: Directory 'plugins/.paper-remapped/SkinsRestorer.jar' does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	... 10 more
+[00:37:01] [ServerMain/INFO]: [PluginInitializerManager] Initialized 5 plugins
+[00:37:01] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (5):
+ - Essentials (2.22.0), EssentialsSpawn (2.22.0), Geyser-Spigot (2.12.1-SNAPSHOT), ViaVersion (5.12.2), floodgate (2.2.5-SNAPSHOT (b141-81b65cc))
+[00:37:11] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[00:37:11] [ServerMain/ERROR]: Failed to start the minecraft server
+net.minecraft.util.DirectoryLock$LockException: /workspaces/CEDAF-SMP-OFICIAL/server/./world/session.lock: already locked (possibly by other Minecraft instance?)
+	at net.minecraft.util.DirectoryLock$LockException.alreadyLocked(DirectoryLock.java:99) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at net.minecraft.util.DirectoryLock.create(DirectoryLock.java:29) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.<init>(LevelStorageSource.java:431) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at net.minecraft.world.level.storage.LevelStorageSource.validateAndCreateAccess(LevelStorageSource.java:346) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at net.minecraft.server.Main.main(Main.java:188) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at org.bukkit.craftbukkit.Main.main(Main.java:212) ~[purpur-1.21.11.jar:1.21.11-2568-f57bd86]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[?:?]
